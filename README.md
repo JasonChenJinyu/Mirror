@@ -3,8 +3,6 @@
 A lightweight macOS menu bar utility to **auto-connect your iPad via Sidecar** when it’s plugged in.  
 Written in SwiftUI + AppKit, with minimal dependencies, and bundled with a small launcher tool for Sidecar.
 
----
-
 ## Features
 - 🖥️ Menu bar–only interface.
 - 🔌 **Auto-connect toggle**: when enabled, the app monitors USB devices and auto-launches Sidecar when iPad is connected to the computer via USB.  
@@ -12,8 +10,6 @@ Written in SwiftUI + AppKit, with minimal dependencies, and bundled with a small
 - 🔄 Refresh device at anytime.  
 - ℹ️ Simple **About** window with copyright info.  
 - ⏏️ Quit directly from the menu.
-
----
 
 ## Getting Started
 1. Go to Release and download the latest version of the app.
