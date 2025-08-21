@@ -1,38 +1,25 @@
-# SidecarAutoConnect
+# Mirror
 
 A lightweight macOS menu bar utility to **auto-connect your iPad via Sidecar** when it’s plugged in.  
 Written in SwiftUI + AppKit, with minimal dependencies, and bundled with a small launcher tool for Sidecar.
 
 ---
 
-## ✨ Features
-- 🖥️ Menu bar–only interface (no cluttered window UI).  
-- 🔌 **Auto-connect toggle**: when enabled, the app monitors USB devices and auto-launches Sidecar if your iPad is detected.  
+## Features
+- 🖥️ Menu bar–only interface.
+- 🔌 **Auto-connect toggle**: when enabled, the app monitors USB devices and auto-launches Sidecar when iPad is connected to the computer via USB.  
 - 📱 **Device picker**: manually select from available devices and connect/disconnect.  
-- 🔄 Refresh device list anytime.  
+- 🔄 Refresh device at anytime.  
 - ℹ️ Simple **About** window with copyright info.  
 - ⏏️ Quit directly from the menu.
 
 ---
 
-## 📦 Installation
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/<your-username>/SidecarAutoConnect.git```
-2. Open SidecarAutoConnect.xcodeproj in Xcode.
+## Getting Started
+1. Go to Release and download the latest version of the app.
+2. Decompress the file and drag the App into your Application folder.
 
-3. Build & run. The app will appear as an iPad icon in the menu bar.
-
-## 🔑 Permissions
-The app automates parts of Sidecar. macOS may ask you to grant:
-
-1. Accessibility access (for UI automation via AppleScript, if used).
-
-2. Screen Recording if you want to use Sidecar screen sharing features.
-
-Make sure you grant these in System Settings → Privacy & Security.
-
-## 🛠️ Development
+## Development Stack
 - Language: Swift 5
 
 - UI: SwiftUI + AppKit (MenuBarExtra)
@@ -42,7 +29,7 @@ Make sure you grant these in System Settings → Privacy & Security.
 - Helper binary: SidecarLauncher (included in bundle)
 
 ### File Overview
-- SidecarAutoConnectApp.swift → App entry & menu bar UI.
+- Mirror.swift → App entry & menu bar UI.
 
 - USBMonitor.swift → Detects iPad USB connection, handles debounce logic, calls Sidecar.
 
@@ -50,10 +37,11 @@ Make sure you grant these in System Settings → Privacy & Security.
 
 - SidecarLauncher → Minimal CLI helper to trigger Sidecar actions (connect/disconnect/list devices).
 
-## ⚠️ Disclaimer
+## Note
 This tool uses private Sidecar APIs and/or scripting. Behavior may break across macOS updates.
 Use at your own risk.
 
-## 📜 License
-MIT License © 2025 Jason Chen
-Feel free to fork, modify, and share.
+## License
+Mirror is licensed under MIT License.
+Copyright © 2025 Jason Chen. All rights reserved.
+
